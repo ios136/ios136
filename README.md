@@ -1,6 +1,15 @@
 ## Hi there 👋
 
-<!--
+function countdown(seconds) {
+    let timer = setInterval(() => {
+        console.log(seconds--);
+        if (seconds < 0) {
+            clearInterval(timer);
+            console.log("时间到！");
+        }
+    }, 1000);
+}
+countdown(5);  // 5秒倒计时<!--
 **ios136/ios136** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
